@@ -51,7 +51,7 @@ export default function TextArea(props) {
         <div className="container my-3" style={{color:props.modeval==="dark"?"white":"black"}}>
             <h2>Your text summary</h2>
             <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
-            <p>{(text.length!=0?text.split(" ").length:0)*0.008} minutes to read</p>
+            <p>{(text.length!==0?text.split(" ").length:0)*0.008} minutes to read</p>
             <h3 className="my-2">preview</h3>
             <p>{text.length>0?text:"enter some text to perform operations"}</p>
         </div>
